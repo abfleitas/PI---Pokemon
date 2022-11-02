@@ -1,0 +1,26 @@
+.search{
+    width: 260px;
+    height: 40px;
+    margin-right: 15px;
+    border: none;
+    border-bottom: 3px solid green;
+    background: white;
+    outline: 0px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-search{
+    width: 120px;
+    height: 40px;
+    background: rgb(0,128,128);
+    border: 0.5px solid bisque;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-search:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}

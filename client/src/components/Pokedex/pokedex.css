@@ -1,0 +1,149 @@
+.container_detail {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    border: 5px solid rgb(0,128,128);
+    border-radius: 10px;
+    background: hsl(33, 100%, 88%, 0.7);
+    margin-top: 50px;
+}
+
+.container-detail{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background-image: url('../../img/pokemon-unite.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 937px;;
+}
+
+.container_types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_types h2{
+    padding: 10px 25px 10px 25px;
+    color: azure;
+    border-radius: 30px;
+}
+
+meter{
+    width: 200px;
+    height: 30px;
+}
+
+.stats_1, .stats_2, .stats_3{
+    margin: 20px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_detail img{
+    width: 40%;
+    height: 80%; 
+}
+
+.home span a{
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.home span a:hover{
+    background-color: #00a696;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.top h3{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.home{
+    margin-top: 30px;
+}
+
+.top-loader{
+    margin-top: 300px;
+}
+
+#fire {
+    background: radial-gradient(circle at 79.88% -14.09%, #ffff6d 0, #ffff5e 10%, #ffff53 20%, #ffeb49 30%, #ffd142 40%, #f2b53c 50%, #df9a38 60%, #ce8335 70%, #be7033 80%, #b16033 90%, #a55334 100%);
+    box-shadow: 0px 5px 20px -10px #000851;
+}
+
+#water, #dragon {
+    background: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+    box-shadow: 0px 5px 20px -10px #000851;
+}
+
+#grass {
+    background: radial-gradient(circle at 74.18% -16.45%, #f2ff7c 0, #deff80 8.33%, #c8fe84 16.67%, #b2f888 25%, #9bef8c 33.33%, #84e58f 41.67%, #6cd890 50%, #55cb91 58.33%, #3fc091 66.67%, #26b693 75%, #00ad94 83.33%, #00a696 91.67%, #00a099 100%);
+    box-shadow: 0px 5px 20px -10px #000851;
+  }
+
+#poison {
+    background: radial-gradient(circle at 74.18% -16.45%, #ff7f85 0, #ff748c 8.33%, #ff6994 16.67%, #ff5d9c 25%, #ff52a4 33.33%, #ff47ad 41.67%, #f23cb5 50%, #e234be 58.33%, #cf32c8 66.67%, #b935d2 75%, #9f3bdb 83.33%, #7e42e5 91.67%, #514aed 100%);
+    box-shadow: 0px 5px 20px -10px #000851;
+}
+
+#flying {
+    background: radial-gradient(circle at 50% -20.71%, #fffff6 0, #fffbe1 16.67%, #faedcc 33.33%, #f2deb5 50%, #ebcf9f 66.67%, #e6c08c 83.33%, #e2b17a 100%);
+    box-shadow: 0px 5px 20px -10px #000851;
+}
+
+#bug {
+    background: linear-gradient(
+      140deg,
+      rgba(39, 80, 9, 1) 0%,
+      rgba(110, 127, 14, 1) 69%,
+      rgba(196, 218, 61, 1) 100%
+    );
+    box-shadow: 0px 5px 20px -10px #000851;
+  }
+
+#electric {
+    background: linear-gradient(180deg, #ffffa9 0, #ffff81 25%, #f2f253 50%, #c4d319 75%, #99ba00 100%);;
+}
+
+#fighting{
+    background: linear-gradient(195deg, #fff888 0, #fbe27f 16.67%, #ebcc75 33.33%, #d8b46c 50%, #c39d63 66.67%, #b08a5b 83.33%, #9e7954 100%);
+}
+
+#ground, #rock{
+    background: linear-gradient(225deg, #f4dc9b 0, #e7c985 25%, #d8b46c 50%, #c99f54 75%, #bd8d40 100%);
+}
+
+#fairy{
+    background: radial-gradient(circle at 50% -20.71%, #fbe2d5 0, #fadace 10%, #f9d2c7 20%, #f7c9c1 30%, #f5c0bb 40%, #f2b5b5 50%, #eeabb1 60%, #eaa1ae 70%, #e699ae 80%, #e091af 90%, #da8bb1 100%);
+}
+
+#normal{
+    background: radial-gradient(circle at 50% -20.71%, #ffe6cd 0, #ffe7ca 6.25%, #ffe9c9 12.5%, #ffebc8 18.75%, #fbecc8 25%, #f6eec8 31.25%, #f1efc9 37.5%, #ebf1cb 43.75%, #e6f2cd 50%, #e1f3d0 56.25%, #dbf4d3 62.5%, #d6f5d7 68.75%, #d1f6db 75%, #ccf7df 81.25%, #c8f8e4 87.5%, #c4f8e9 93.75%, #c1f8ee 100%);
+}
+
+#ghost, #steel{
+    background: radial-gradient(circle at 50% -20.71%, #a7deff 0, #6c90d8 50%, #38496b 100%);
+}
+
+#psychic{
+    background: linear-gradient(180deg, #ffbbcc 0, #ffb2c8 16.67%, #ffa8c1 33.33%, #f29db9 50%, #dc93b0 66.67%, #c889a7 83.33%, #b6819e 100%);
+}
+
+#ice{
+    background: linear-gradient(180deg, #cbffdc 0, #baffdc 16.67%, #abffda 33.33%, #9df2d5 50%, #92e3cf 66.67%, #89d5c9 83.33%, #83c9c4 100%);
+}
