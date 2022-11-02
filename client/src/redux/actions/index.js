@@ -12,7 +12,7 @@ export const CREATE_POKEMON = 'CREATE_POKEMON'
 
 export const getAllPokemons = () => async (dispatch)=>{
     try {
-        let allPokes = await axios.get('http://localhost:3001/pokemons');
+        let allPokes = await axios.get('/pokemons');
         return dispatch({
             type: GET_ALL_POKEMONS,
             payload: allPokes.data
@@ -24,7 +24,7 @@ export const getAllPokemons = () => async (dispatch)=>{
 
 export const getPokemonByName = (poke) => async (dispatch) => {
     try {
-        let info = await axios.get(`http://localhost:3001/pokemons?name=${poke}`);
+        let info = await axios.get(`/pokemons?name=${poke}`);
         return dispatch({
             type: GET_POKEMON_BY_NAME,
             payload: info.data
@@ -37,7 +37,7 @@ export const getPokemonByName = (poke) => async (dispatch) => {
 export const getPokemonDetail = (id) => async (dispatch) => {
     try {
         console.log('numero', id);
-        let detail = await axios.get(`http://localhost:3001/pokemons/${id}`);
+        let detail = await axios.get(`/pokemons/${id}`);
         return dispatch({
             type: GET_POKEMON_DETAIL,
             payload: detail.data
@@ -48,13 +48,13 @@ export const getPokemonDetail = (id) => async (dispatch) => {
 };
 
 export const getAllTypes = () => async (dispatch) => {
-    return await axios.get('http://localhost:3001/types')
+    return await axios.get('/types')
                 .then(res => dispatch({type: GET_ALL_TYPES, payload: res.data}))
 };
 
 export const postPokemon = (pokemon) => async(dispatch) => {
     try {
-        await axios.post('http://localhost:3001/pokemons', pokemon);
+        await axios.post('/pokemons', pokemon);
         return dispatch({
             type: CREATE_POKEMON    
         })
@@ -65,7 +65,7 @@ export const postPokemon = (pokemon) => async(dispatch) => {
 
 export const deletePokemon = async(id) => {
     try {
-        await axios.delete(`http://localhost:3001/pokemons/${id}`);
+        await axios.delete(`/pokemons/${id}`);
         return alert('Pokemon eliminado correctamente');
     } catch (error) {
         console.log(error);
