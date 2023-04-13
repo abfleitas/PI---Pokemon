@@ -11,7 +11,7 @@ import axios from 'axios';
 dotenv.config();
 
 
-axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:3001";
+axios.defaults.baseURL = "https://pi-pokemon-production-fcb7.up.railway.app/";
 
 ReactDOM.render(
     <BrowserRouter>
